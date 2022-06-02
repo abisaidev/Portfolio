@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.blur-filter{
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(243, 243, 243, 0.2);
+}
+
+.box-shadow{
+    box-shadow: 0px 3px 10px 0px rgba(104,104,104,0.75);
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(104,104,104,0.75);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(104,104,104,0.75);
+}
+
+
+
+nav{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 12px 10px 8px 10px;
+    top: 0;
+    position: fixed;
+    border-radius: 0 0 5px 5px;
+}
+
+label > img{
+    height: 30px;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input#hamburguer-menu{
+    visibility: hidden;
+}
+
+input#hamburguer-menu ~ ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: -50px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 10;
+    display: none;
+    padding: 2rem;
+}
+
+input#hamburguer-menu:checked ~ ul{
+    display: flex;
+}
+
+/* <!-- --> */
+
+/* <!-- --> */
+
+#home{
+    width: 100vw;
+    height: 85vh;
+    padding-top: 60px;
+    background-color: palevioletred;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.presentation{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sqr{
+    width: fit-content;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sqr > img{
+    height: 250px;
+    
+}
+
+.sqr2{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.line-up{
+    background-color: black;
+    height: 2px;
+    width: 130px;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.social-media{
+    height: 30px;
+    margin-top: 5px;
+}
+
+.social-media > img{
+    height: 30px;
+}
+
+.sqr2 > button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button > img{
+    height: 10px;
+    margin-right: 5px;
+}
+
+.services{
+    width: 100vw;
+    height: 35vh;
+    background-color: gray;
+    padding: 1rem;
+    color: white;
+}
+
+.services > .line-up{
+    margin: 0;
+    background-color: white;
+}
+
+.services-container{
+    display: flex;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.srvcs-sqr{
+    background-color: white;
+    width: 120px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+/* <!-- --> */
+
+/* <!-- --> */
+
+#about-me{
+    width: 100vw;
+    height: 85vh;
+    padding-top: 50px;
+    background-color: palegoldenrod;
+}
+
+.about-me{
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.education{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.school{
+    width: 155px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.school > img{
+    width: 100px;
+    height: 100px;
+}
+
+.school > p{
+    font-size: 0.7rem;
+}
+
+/* <!-- --> */
+
+/* <!-- --> */
+
+#skills{
+    width: 100vw;
+    height: 85vh;
+    padding-top: 50px;
+    background-color: aquamarine;
+}
+
+.skills{
+    padding: 1rem;
+    height: 90%;
+}
+
+.skills > .line-up{
+    margin: 0;
+}
+
+.skills-container{
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skill{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.skill-percentage{
+    width: 25%;
+    height: 45%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.skill-percentage > .line-up{
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: gray;
+}
+
+.skill-info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.skill-info > p{
+    font-size: 0.7rem;
+}
+
+.line-up-post{
+    background-color: black;
+    border-radius: 5px 5px 5px 0;
+}
+
+div > .first-ptg{
+    height: 100%;
+    width: 50%;
+}
+
+div > .second-ptg{
+    height: 100%;
+    width: 0%;
+}
+
+div > .third-ptg{
+    height: 100%;
+    width: 80%;
+}
+
+div > .fourth-ptg{
+    height: 100%;
+    width: 5%;
+}
+
+
+
+/* <!-- --> */
+
+/* <!-- --> */
+
+#portfolio{
+    width: 100vw;
+    height: 50vh;
+    padding-top: 50px;
+    background-color: paleturquoise;
+}
+
+.portfolio{
+    padding: 1rem;
+    height: 90%;
+}
+
+.portfolio > .line-up{
+    margin: 0;
+}
+
+.projects-container{
+    border: 1px solid black;
+    height: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.project{
+    border: 1px solid red;
+    height: 80%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}
+
+.project-image{
+    height: 70%;
+    background-image: url(../images/beauty-app.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-image > img{
+    height: 100%
+}
+
+.project-info{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-info > p{
+    font-size: 0.7rem;
+}
+
+/* <!-- --> */
+
+/* <!-- --> */
+
+#contact-me{
+    width: 100vw;
+    height: 50vh;
+    padding-top: 50px;
+}
+
+/* <!-- --> */
+
+/* <!-- --> */
+
+footer{
+    width: 100vw;
+    height: 50px;
+    background-color: gray;
+}
