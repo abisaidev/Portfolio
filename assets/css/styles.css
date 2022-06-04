@@ -434,7 +434,7 @@ footer{
     }
 }
 
-@media screen and ( min-width: 375px ){
+@media screen and ( min-width: 375px ) and ( min-height: 630px ) {
 
     .sqr2{
         width: fit-content;
@@ -448,6 +448,17 @@ footer{
     .about-me-info > p {
         font-size: 0.9rem;
     }
+
+    .contact-media{
+        background-color: white;
+        height: 80%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+    }
 }
 
 @media screen and ( min-width: 375px ) and ( min-height: 650px ) {
@@ -460,14 +471,4 @@ footer{
         font-size: 1rem;
     }
 
-    .contact-media{
-        background-color: white;
-        height: 80%;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 0.5rem;
-    }
 }
