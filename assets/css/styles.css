@@ -115,7 +115,7 @@ input#hamburguer-menu:checked ~ ul{
     padding: 10px;
     position: absolute;
     top: 40%;
-    right: 10%;
+    right: calc((100vw - 259.203px) / 2 );
 }
 
 .sqr2 > .line-up{
@@ -458,15 +458,6 @@ footer{
 }
 
 @media screen and ( min-width: 375px ) and ( min-height: 630px ) {
-
-    .sqr2{
-        width: fit-content;
-        height: fit-content;
-        padding: 10px;
-        position: absolute;
-        top: 45%;
-        right: 16%;
-    }
 
     .about-me-info > p {
         font-size: 0.9rem;
