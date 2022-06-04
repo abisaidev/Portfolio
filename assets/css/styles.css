@@ -362,7 +362,6 @@ div > .fourth-ptg{
 
 .project-image{
     height: 70%;
-    background-image: url(../images/beauty-app.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px 5px 0 0;
@@ -370,6 +369,14 @@ div > .fourth-ptg{
 
 .project-image > img{
     height: 100%
+}
+
+.btyapp-svg{
+    background-image: url(../images/beauty-app.svg);
+}
+
+.trnapp-svg{
+    background-image: url(../images/training-app.svg);
 }
 
 .project-info{
