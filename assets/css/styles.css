@@ -116,7 +116,12 @@ input#hamburguer-menu:checked ~ ul{
 .sqr2{
     width: fit-content;
     height: fit-content;
-    padding: 10px;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .sqr2 > .line-up{
@@ -124,15 +129,19 @@ input#hamburguer-menu:checked ~ ul{
 }
 
 .social-media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
     height: 40px;
     margin-top: 5px;
 }
 
-.social-media > img{
+.social-media > a > img{
     height: 40px;
 }
 
-.sqr2 > button{
+.sqr2 > a{
     background-color: transparent;
     border: 1px solid black;
     border-radius: 3px;
@@ -145,7 +154,7 @@ input#hamburguer-menu:checked ~ ul{
     align-items: center;
 }
 
-button > img{
+.sqr2 > a > img{
     height: 15px;
     margin-right: 7px;
 }
