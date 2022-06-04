@@ -379,6 +379,10 @@ div > .fourth-ptg{
     background-image: url(../images/training-app.svg);
 }
 
+.ctnbot-svg{
+    background-image: url(../images/content-bot.svg);
+}
+
 .project-info{
     height: 30%;
     width: 100%;
