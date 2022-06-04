@@ -116,6 +116,7 @@ input#hamburguer-menu:checked ~ ul{
     position: absolute;
     top: 40%;
     right: calc((100vw - 259.203px) / 2 );
+    left: calc((100vw - 259.203px) / 2 );
 }
 
 .sqr2 > .line-up{
