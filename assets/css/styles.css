@@ -17,13 +17,20 @@ html{
     background-color: rgba(243, 243, 243, 0.2);
 }
 
-.box-shadow{
+.line-up{
+    background-color: black;
+    height: 2px;
+    width: 130px;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.default-box{
+    border-radius: 5px;
     box-shadow: 0px 3px 10px 0px rgba(104,104,104,0.75);
     -webkit-box-shadow: 0px 3px 10px 0px rgba(104,104,104,0.75);
     -moz-box-shadow: 0px 3px 10px 0px rgba(104,104,104,0.75);
 }
-
-
 
 nav{
     background-color: white;
@@ -116,15 +123,6 @@ input#hamburguer-menu:checked ~ ul{
     width: fit-content;
     height: fit-content;
     padding: 10px;
-    border-radius: 5px;
-}
-
-.line-up{
-    background-color: black;
-    height: 2px;
-    width: 130px;
-    margin: 10px 0;
-    border-radius: 2px;
 }
 
 .social-media{
@@ -178,7 +176,6 @@ button > img{
     background-color: white;
     width: 120px;
     height: 130px;
-    border-radius: 5px;
 }
 
 /* <!-- --> */
@@ -208,14 +205,14 @@ button > img{
 }
 
 .school{
-    width: 155px;
-    height: 170px;
+    width: 47%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 5px;
+    padding: 10px;
 }
 
 .school > img{
@@ -260,14 +257,11 @@ button > img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 5px;
 }
 
 .skill-percentage{
     width: 25%;
-    height: 45%;
-    text-align: center;
-    border-radius: 5px;
+    height: 50%;
 }
 
 .skill-percentage > .line-up{
@@ -276,6 +270,13 @@ button > img{
     margin: 0;
     border-radius: 5px 5px 0 0;
     background-color: gray;
+}
+
+.percentage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 5px);
 }
 
 .skill-info{
@@ -339,16 +340,18 @@ div > .fourth-ptg{
 }
 
 .projects-container{
-    border: 1px solid black;
     height: 95%;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
     align-items: center;
+    gap: 1.6rem;
+    padding: 0 .6rem;
 }
 
 .project{
-    border: 1px solid red;
-    height: 80%;
-    width: 65%;
+    height: 160px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -360,6 +363,7 @@ div > .fourth-ptg{
     background-image: url(../images/beauty-app.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5px 5px 0 0;
 }
 
 .project-image > img{
@@ -388,6 +392,22 @@ div > .fourth-ptg{
     padding-top: 50px;
 }
 
+.contact-me-container{
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.item-contact{
+    width: 80%;
+    height: 200px;
+    background-color: gray;
+}
+
 /* <!-- --> */
 
 /* <!-- --> */
@@ -395,5 +415,5 @@ div > .fourth-ptg{
 footer{
     width: 100vw;
     height: 50px;
-    background-color: gray;
+    background-color: violet;
 }
