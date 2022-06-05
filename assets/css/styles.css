@@ -11,10 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: aquamarine;
-}
-
 .blur-filter{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
