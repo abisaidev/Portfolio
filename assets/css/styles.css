@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: aquamarine;
+}
+
 .blur-filter{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -35,7 +39,7 @@ html{
 nav{
     background-color: white;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: end;
