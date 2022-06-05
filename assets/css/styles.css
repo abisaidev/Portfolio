@@ -11,10 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    width: 100vw;
-}
-
 .line-up{
     background-color: black;
     height: 2px;
