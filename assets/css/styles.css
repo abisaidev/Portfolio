@@ -9,12 +9,7 @@
 
 html{
     scroll-behavior: smooth;
-}
-
-.blur-filter{
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    background-color: rgba(243, 243, 243, 0.2);
+    width: 100vw;
 }
 
 .line-up{
@@ -35,7 +30,7 @@ html{
 nav{
     background-color: white;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -448,6 +443,12 @@ footer{
     font-size: 0.65rem;
 }
 
+/* <!-- --> */
+
+/*          Mobile First: Detalles          */
+
+/* <!-- --> */
+
 @media screen and ( min-width: 360px ){
 
     .about-me-info > p {
@@ -471,7 +472,7 @@ footer{
     .about-me-info > p {
         font-size: 1rem;
     }
-    
+
 }
 
 @media screen and ( min-width: 375px ) and ( min-height: 630px ) {
@@ -492,3 +493,10 @@ footer{
     }
 
 }
+
+/* <!-- --> */
+
+/*          Desktop          */
+
+/* <!-- --> */
+
